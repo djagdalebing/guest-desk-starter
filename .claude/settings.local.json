@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/devangjagdale/.nvm/versions/node/**)",
+      "Bash(command -v nvm)",
+      "Bash(brew list *)",
+      "Read(//opt/homebrew/opt/**)",
+      "Read(//usr/local/**)",
+      "Bash(command -v fnm volta)",
+      "Bash(/Users/devangjagdale/.nvm/versions/node/v25.6.1/bin/npm test *)",
+      "Bash(/Users/devangjagdale/.nvm/versions/node/v25.6.1/bin/npm start *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:43211/)",
+      "Bash(curl -s http://127.0.0.1:43211/api/requests)",
+      "Bash(curl -s http://127.0.0.1:43211/api/next-request)",
+      "Bash(curl -s -X PATCH http://127.0.0.1:43211/api/requests/GD-103 -H 'Content-Type: application/json' -d '{\"status\":\"resolved\"}' -o /dev/null -w \"patch:%{http_code}\\\\n\")",
+      "Bash(curl -s -o /dev/null -w \"page:%{http_code}\\\\n\" http://127.0.0.1:43211/)",
+      "Bash(python3 -c \"import sys,json;d=json.load\\(sys.stdin\\);print\\('next:',d['request']['id'],'—',d['reason']\\)\")",
+      "Bash(curl -s -o /dev/null -w \"app.js:%{http_code}\\\\n\" http://127.0.0.1:43211/app.js)"
+    ]
+  }
+}
